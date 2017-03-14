@@ -1,0 +1,40 @@
+body{
+	font-family: Verdana;
+	font-size: 13px;
+}
+.table
+{
+	display: table;
+}
+.row
+{
+	display: table-row;
+}
+.cell
+{
+	display: table-cell;
+	padding: 10px
+}
+div#toppingsContainer.hide
+{
+	display:none;
+}
+ul#toppingsList
+{
+	list-style-type: none;
+}
+li
+{
+	float:left;
+	padding: 5px;
+}
+img
+{
+	height:115px;
+	width:100px;
+}
+img.selected
+{
+	border: 1px solid red;
+}
+

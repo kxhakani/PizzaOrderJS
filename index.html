@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+    		<title>Pizza Order Form</title>			
+			<script src="clientCode/jquery-1.12.1.min.js"></script>
+			<script src="clientCode/pizzaOrder.js"></script>
+			<link rel="stylesheet" type="text/css" href="css/pizza.css">
+  	</head>
+
+<body>
+<form action="#" method="post" name="frmPizzaOrder">
+	<div class="table">
+		<div class="row">
+			<div class="cell">Name:</div>	
+			<div class="cell">
+						<input type="text" name="txtName" id="txtName" autofocus>
+				Phone:	<input type="text" name="txtPhone" id="txtPhone" placeholder="999-999-9999">
+						<input type="button" id="btnMessage" value="Get Total">
+			</div>
+		</div>
+	
+	
+		<div class="row">
+			<div class="cell">Base Pizza:</div>
+			<div class="cell">
+				<select id="cboBase" name="cboBase">
+					<option value="0">Select a starter pizza ...</option>
+					<option value="10.25">Canadian Eh! -- $10.25</option>
+					<option value="12.00">Hawaiian -- $12.00</option>
+					<option value="12.50">Chili Dawg -- $12.50</option>
+					<option value="15.00">Meat Lover's Deluxe -- $15.00</option>		   
+				</select>
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="cell">Pizza Size:</div>
+			<div class="cell">
+				<input type="radio" name="radSize" id="radSmall" value="0">Small
+				<input type="radio" name="radSize" id="radMedium" value="5">Medium
+				<input type="radio" name="radSize" id="radLarge" value="7">Large
+			</div>
+		</div>	
+
+		<div class="row">
+			<div class="cell">Toppings?</div>
+			<div class="cell">
+				<input type="checkbox" id="chkWantsMoreToppings">
+			</div>
+		</div>		
+		
+	</div>
+	
+	<div id="toppingsContainer" class="hide">
+				<ul id="toppingsList">
+					<li>
+						<img id="extraCheese" src="pics/gratedCheese.jpg" alt="cheese"><br />
+						<input type="checkbox" name="chkExtras">Extra Cheese
+					</li>
+					<li>
+						<img id="extraSauce" src="pics/redSauce.jpg" alt="sauce" /><br>
+						<input type="checkbox" name="chkExtras">Extra Sauce
+					</li>
+					<li>
+						<img id="blackOlives" src="pics/blackOlives.jpg" alt="olives" /><br>
+						<input type="checkbox" name="chkExtras">Olives
+					</li>
+					<li>
+						<img id="anchovies" src="pics/anchovies.jpg" alt="anchovies""><br>
+						<input type="checkbox" name="chkExtras">Anchovies
+					</li>
+				</ul>
+	</div>	
+</form>
+
+</body>
+</html>
